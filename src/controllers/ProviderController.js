@@ -17,6 +17,7 @@ module.exports =  {
                 {
                     association: 'products',
                     attributes: ['name'],
+                    required: true,
                     include: [{
                         association: 'stocks',
                         attributes: ['amount'],

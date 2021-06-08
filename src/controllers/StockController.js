@@ -29,7 +29,7 @@ module.exports =  {
         const stockBody = req.body
 
         const stock =  await Stock.findByPk(stock_id)
-        //res.json(product)
+        
         await stock.update(stockBody, {
             include: ['product']
         })

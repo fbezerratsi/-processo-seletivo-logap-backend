@@ -7,3 +7,4 @@ module.exports = routes => {
     routes.get('/products-zero', ProductController.getProductsMissingFromStock)
     routes.put('/products/update/:product_id', ProductController.edit)
 }
+
